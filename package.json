@@ -1,0 +1,30 @@
+{
+  "name": "personal-site-derver",
+  "version": "0.0.1",
+  "description": "Personal Site Server",
+  "keywords": [
+    "personal",
+    "site",
+    "server",
+    "koa",
+    "mongodb"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Yang",
+    "email": "liangfei@teambition.com"
+  },
+  "main": "main.ts",
+  "scripts": {
+    "build:ts": "tsc -p tsconfig.json",
+    "dev": "NODE_ENV=develop node dist/main.js"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.4",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {}
+}

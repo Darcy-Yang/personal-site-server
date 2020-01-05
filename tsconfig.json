@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "lib": ["ES2017"],
+    "outDir": "dist"
+  },
+  "include": ["app/**/*"],
+  "exclude": ["node_modules"]
+}
