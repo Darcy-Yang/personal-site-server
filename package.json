@@ -17,11 +17,13 @@
   "main": "main.ts",
   "scripts": {
     "build:ts": "tsc -p tsconfig.json",
-    "dev": "NODE_ENV=develop node dist/main.js"
+    "dev": "yarn build:ts && NODE_ENV=develop node dist/main.js"
   },
   "dependencies": {
+    "@koa/cors": "^3.0.0",
     "@types/node": "^13.1.4",
     "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "mongoose": "^5.8.4",
     "tsc": "^1.20150623.0",

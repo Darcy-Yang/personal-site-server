@@ -12,7 +12,7 @@ const ArticleSchema = new mongoose.Schema({
   },
   tagIds: [ObjectId],
   commentIds: [ObjectId]
-}, { timestamp: true })
+}, { timestamps: true })
 
 const Article = mongoose.model('article', ArticleSchema)
 
