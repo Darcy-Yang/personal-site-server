@@ -11,7 +11,9 @@ const ArticleSchema = new mongoose.Schema({
     desc: String
   },
   tagIds: [ObjectId],
-  commentIds: [ObjectId]
+  commentIds: [ObjectId],
+  noteBookIds: [ObjectId],
+  chapterIds: [ObjectId]
 }, { timestamps: true })
 
 const Article = mongoose.model('article', ArticleSchema)

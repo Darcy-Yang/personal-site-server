@@ -1,6 +1,6 @@
 {
   "name": "personal-site-derver",
-  "version": "0.0.1",
+  "version": "v0.0.1",
   "description": "Personal Site Server",
   "keywords": [
     "personal",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "author": {
     "name": "Daniel Yang",
-    "email": "liangfei@teambition.com"
+    "email": "17855320284@163.com"
   },
   "main": "main.ts",
   "scripts": {

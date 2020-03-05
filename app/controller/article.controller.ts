@@ -1,10 +1,11 @@
 import { Article } from '../model'
 
 async function createArticle(ctx: any) {
-  const { content } = ctx.request.body
+  const { title, content } = ctx.request.body
   if (!content) return
 
   await Article.create({
+    title,
     content
   })
   ctx.body = { success: 1, message: '创建成功' }
