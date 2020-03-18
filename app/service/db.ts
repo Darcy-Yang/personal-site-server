@@ -4,7 +4,7 @@ const config = require(`../../config/${process.env.NODE_ENV}.json`)
 const { mongoUrl } = config
 
 function initDB() {
-  mongoose.connect(mongoUrl, { useNewUrlParser: true })
+  mongoose.connect(mongoUrl, { useNewUrlParser: true, useFindAndModify: false })
   .then(
     () => console.info('Mongo Connected!'),
     err => console.info('Mongo Error For Initial Connection: ', err)

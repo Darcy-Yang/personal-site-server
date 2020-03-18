@@ -22,9 +22,11 @@
   "dependencies": {
     "@koa/cors": "^3.0.0",
     "@types/node": "^13.1.4",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
+    "md5": "^2.2.1",
     "mongoose": "^5.8.4",
     "tsc": "^1.20150623.0",
     "typescript": "^3.7.4"
