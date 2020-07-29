@@ -15,6 +15,9 @@
     "email": "17855320284@163.com"
   },
   "main": "main.ts",
+  "_moduleAliases": {
+    "@": "dist"
+  },
   "scripts": {
     "build:ts": "tsc -p tsconfig.json",
     "dev": "yarn build:ts && NODE_ENV=develop node dist/main.js"
@@ -27,6 +30,7 @@
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "md5": "^2.2.1",
+    "module-alias": "^2.2.2",
     "mongoose": "^5.8.4",
     "tsc": "^1.20150623.0",
     "typescript": "^3.7.4"

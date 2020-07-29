@@ -4,7 +4,11 @@
     "removeComments": true,
     "esModuleInterop": true,
     "lib": ["ES2017"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/*"]
+    }
   },
   "include": ["app/**/*"],
   "exclude": ["node_modules"]
