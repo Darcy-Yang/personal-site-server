@@ -1,13 +1,12 @@
-import { Login } from '../service'
+import { Login } from '@/service'
 
 async function verifyAccount(ctx: any) {
   const { sign } = ctx.request.body
-  const account = await Login.verifyAccount(sign)
-  if (typeof account === 'string') {
-    return ctx.body = { success: 0, info: account }
+  const info = await Login.verifyAccount(sign)
+  ctx.body = {
+    success: typeof info === 'string' ? 0 : 1,
+    info
   }
-
-  ctx.body = { success: 1, info: account }
 }
 
 export default {

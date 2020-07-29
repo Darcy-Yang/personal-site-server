@@ -18,8 +18,7 @@ async function createAccount(account: IAccount) {
   const { username, password } = verify(sign, 'secret_key')
   const salt = md5(password)
 
-  const user = await User.create({ email, name: username, password: salt })
-  return user
+  return await User.create({ email, name: username, password: salt })
 }
 
 export default {
